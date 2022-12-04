@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    background-image:linear-gradient(to left, rgb(244, 247, 92), rgb(206, 148, 248));
+    justify-content: center;
+    align-items: center;
+    font-family:monospace;
+    text-align: left;
+}
+.container-fluid{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#charnumber{
+    background-color: transparent;
+    border-radius: 1rem;
+    border-style:dashed;
+    width: 7rem;
+    font-family:monospace;
+}
+#charnumber:hover{
+    background-color: #FFF!important;
+}
+#charnumber:focus-within{
+    background-color: #FFF!important;
+    border-style: dashed;
+}
+
+.btn{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    grid-column: span 2;
+    border-style: double;
+    font-family:monospace;
+    padding: .5rem 1rem;
+    width: 12rem;
+}
+
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="../app.js" defer></script>
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="container-fluid">
+        <p class="display-5">Password Generator</p>
+        <p class="display-6" id="passwordDisplay">Password</p>
+        <form class="form" id="passwordGeneratorForm">
+           <label for="charnumber">Number of characters</label>
+           <div class="form-group col-md-2">
+            <input type="range" min="1" max="50" id="charslider" class="form-control-range">
+            <input type="number" min="1" max="50" id="charnumber" class="form-control">
+            </div>
+            <br>
+            <label for="includeUpper" id="Upper" class="form-check-label">Include Uppercase</label>
+            <input type="checkbox" id="includeUpper" class="form-check-input">
+            <br>
+            <label for="includenumber" id="Number" class="form-check-label">Include Numbers</label>
+            <input type="checkbox" id="includenumber" class="form-check-input">
+            <br>
+            <label for="includeSymbols" id="Symbols" class="form-check-label">Include Symbols</label>
+            <input type="checkbox" id="includeSymbols" class="form-check-input">
+            <br>
+            <button type="submit" class="btn btn-outline-dark">Generate</button>
+        </form>
+    </div>
+</body>
+</html>
